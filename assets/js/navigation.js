@@ -29,7 +29,7 @@ $(function(){
 	});
 
 	/* 모바일 */
-	$(document).on("click",".mobile .allmenu .allmenuwrap>div>ul>li",function(){
+	$(document).on("click",".allmenu .allmenuwrap>div>ul>li",function(){
 		
 		if($(this).attr("class") == "act"){
 			
@@ -40,7 +40,7 @@ $(function(){
 			$(this).find("ul").slideDown(300);
 			
 		}
-		
+
 		$(this).toggleClass("act");
 		$(this).siblings("li").removeClass("act");
 		$(this).siblings("li").find("ul").slideUp();
